@@ -11,7 +11,7 @@ public class SelfDividingNumbers {
 
     private static List<Integer> selfDividingNumbers(int leftNum, int rightNum) {
         List<Integer> selfDividingNumbers = new ArrayList<>();
-        for(int i = leftNum; i < rightNum; i++){
+        for(int i = leftNum; i <= rightNum; i++){
             if(selfDivide(i)){
                 selfDividingNumbers.add(i);
             }
@@ -22,7 +22,7 @@ public class SelfDividingNumbers {
     private static boolean selfDivide(int i) {
         int temp = i;
         int digit;
-        while(temp<0){
+        while(temp > 0){
             digit = temp % 10;
             if(digit == 0){
                 return false;
