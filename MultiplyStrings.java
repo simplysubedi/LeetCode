@@ -1,9 +1,9 @@
-import java.math.BigInteger;
+
 
 public class MultiplyStrings {
     public static void main(String []args){
-        String num1 = "123";
-        String num2 = "456";
+        String num1 = "54";
+        String num2 = "244";
         System.out.println("The product is: "+multiply(num1, num2));
     }
 
