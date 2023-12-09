@@ -8,11 +8,13 @@ int [] nums = {1,2,3};
         System.out.println("Possible permutations are: "+premute(nums).toString());
     }
 
-    private static List<List<Integer>> permute(int[] nums) {
+    private static List<List<Integer>> premute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         backtrack(nums, new ArrayList<>(), result);
         return result;
     }
+
+
 
     private static void backtrack(int[] nums, List<Integer> tempList, List<List<Integer>> result) {
         if (tempList.size() == nums.length) {
