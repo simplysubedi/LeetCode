@@ -12,12 +12,12 @@ public class ValidPalindrome {
             char leftChar = s.charAt(left);
             char rightChar = s.charAt(right);
 
-            if (!isLetter(leftChar)) {
+            if (!Character.isLetterOrDigit(leftChar)) {
                 left++;
                 continue;
             }
 
-            if (!isLetter(rightChar)) {
+            if (!Character.isLetterOrDigit(rightChar)) {
                 right--;
                 continue;
             }
